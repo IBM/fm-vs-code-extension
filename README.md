@@ -6,6 +6,9 @@ IBM File Manager for z/OS&reg; provides flexible, user-friendly tools for enhanc
 This comprehensive solution provides intuitive interfaces for accessing, editing, and managing datasets and files on z/OS systems,
 and is a modern alternative to work with IBM File Manager outside the existing Eclipse-based client.
 
+**Simplify your installation experience by using newly bundled extension packs that contain IBM File Manager for z/OS
+as well as other extensions available for [ADFz][link-ext-pack] customers.**
+
 ## General requirements
 
 - Assumes knowledge of IBM File Manager for z/OS&reg; product [installation][link-fm-install] and [features][link-features]
@@ -18,7 +21,7 @@ and is a modern alternative to work with IBM File Manager outside the existing E
 ## VS Code extension requirements
 
 - [VS Code][link-vscode] `1.90.0`+
-- [Zowe Explorer][link-zowe] `2.17.0`+
+- [Zowe Explorer][link-zowe] `3.1.0`+
   - Assumes that the user has knowledge of the Zowe Explorer extension before using the IBM File Manager extension
 
 ## Host requirements
@@ -32,8 +35,14 @@ Note that while `15.1.x` host builds might work, they are **not** officially sup
 
 ### Supported charsets
 
-The extension currently supports data exchange only with the SBCS encodings `IBM037` and `IBM1047`.  
-Support for additional charsets is planned for future releases.
+The extension currently supports decoding and encoding character data using the following character sets:
+
+```text
+IBM037  IBM939   IBM1390
+IBM273  IBM1047  IBM1399
+IBM297  IBM1141
+IBM930  IBM1147
+```
 
 ## Features
 
@@ -74,13 +83,12 @@ The current implementation offers the following feature set:
 
 ### ADFz Common Component server connections
 
-- Associate an ADFz port with a Zowe Profile
-- Remove the association between an ADFz port and a Zowe profile
+- Associate an ADFzCC port with a Zowe Profile
+- Remove the association between an ADFzCC port and a Zowe profile
 
 ## Unsupported features
 
-- Multi-Factor Authentication (MFA)
-- Trust manager for certificates used when connecting to the ADFz Common Component server
+- Trust manager for certificates used when connecting to the ADFzCC server
 
 ### File Manager editor
 
@@ -101,7 +109,7 @@ The current implementation offers the following feature set:
 
 # Getting started
 
-## Specifying the ADFz connection port
+## Specifying the ADFzCC connection port
 
 Before you begin, all the above requirements must be fulfilled.
 
@@ -151,3 +159,4 @@ in the Template editor.
 [link-adfz-config]: https://help.blueproddoc.com/adfz_common_components/1.10.0/en/index.html
 [link-adfz-customize]: https://help.blueproddoc.com/adfz_common_components/1.10.0/en/svrauth.html
 [link-adfz-attls]: https://help.blueproddoc.com/adfz_common_components/1.10.0/en/attls.html
+[link-ext-pack]: https://marketplace.visualstudio.com/items?itemName=IBM.application-delivery-foundation-for-zos-vscode-extension-pack
