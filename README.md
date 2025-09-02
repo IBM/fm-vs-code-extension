@@ -13,10 +13,9 @@ as well as other extensions available for [ADFz][link-ext-pack] customers.**
 
 - Assumes knowledge of IBM File Manager for z/OS&reg; product [installation][link-fm-install] and [features][link-features]
 - The File Manager VS Code extension connectivity to File Manager host is similar to using
-  the Application Delivery Foundation for z/OS&reg; common component (ADFzCC) server
-  - Assumes knowledge of how to [install][link-adfz-install] and [configure][link-adfz-config]
-    the Application Delivery Foundation for z/OS&reg; common component server
-  - [ADFzCC][link-adfz-customize] must use the [AT-TLS][link-adfz-attls] feature when configuring TLS support
+  the Application Delivery Foundation for z/OS&reg; Common Component (ADFzCC) server
+  - Assumes knowledge of how to [install][link-adfz-install] and [configure][link-adfz-config] the ADFz Common Component server
+  - [ADFz Common Component][link-adfz-customize] must use the [AT-TLS][link-adfz-attls] feature when configuring TLS support
 
 ## VS Code extension requirements
 
@@ -28,7 +27,7 @@ as well as other extensions available for [ADFz][link-ext-pack] customers.**
 
 - [IBM File Manager for z/OS&reg;][link-fm] `16.1.0`+
 - [IBM Application Delivery Foundation for z/OS&reg; Common Components][link-adfz-docs] `1.10.0`+
-  - There must be at least one ADFz common component server configured and deployed
+  - There must be at least one ADFz Common Component server configured and deployed
     on the host that you want to work with
 
 Note that while `15.1.x` host builds might work, they are **not** officially supported.
@@ -81,14 +80,14 @@ The current implementation offers the following feature set:
 - Layout criteria editing
 - Held and Selected column toggle
 
-### ADFz Common Component server connections
+### ADFz Common Component connections
 
-- Associate an ADFzCC port with a Zowe Profile
-- Remove the association between an ADFzCC port and a Zowe profile
+- Associate an ADFz Common Component connection with a Zowe Profile
+- Remove the association between an ADFz Common Component connection and a Zowe profile
 
 ## Unsupported features
 
-- Trust manager for certificates used when connecting to the ADFzCC server
+- Trust manager for certificates used when connecting to the ADFz Common Component server
 
 ### File Manager editor
 
@@ -109,21 +108,21 @@ The current implementation offers the following feature set:
 
 # Getting started
 
-## Specifying the ADFzCC connection port
+## Configuring the ADFz Common Component connection
 
 Before you begin, all the above requirements must be fulfilled.
 
 1. Open VS Code
 2. If necessary, create at least one Zowe profile: team configuration profile or v1 profile (deprecated)
 3. Switch to the Zowe Explorer toolwindow
-4. Right-click on the profile that matches the z/OS subsystem your ADFz common component server is running on
-5. From the **Application Delivery Foundation for z/OS** menu item, choose **Configure port**
-6. Enter the port that your ADFz common component server is configured to use
+4. Right-click on the profile that matches the z/OS subsystem your ADFz Common Component server is running on
+5. From the **Application Delivery Foundation for z/OS** menu item, choose **Configure connection**
+6. Enter the connection information for the ADFz Common Component server
 
 You are now ready to use the IBM File Manager VS Code extension.
 
-NOTE: if you access a File Manager feature before configuring the port number,
-you will be prompted to specify the port the first time only.
+NOTE: if you access a File Manager feature before configuring the ADFz Common Component connection,
+you will be prompted to specify the required information the first time only.
 
 ## File Manager editor
 
