@@ -1,3 +1,56 @@
+# 16.1.326030310 (release)
+
+### Unformatted Editor
+
+- Fixed a data corruption issue caused by an invalid undo/redo stack when creating a new record.
+
+### Templates
+
+- Improved error handling when locking or unlocking a non-existent template.
+- Improved template editor start-up time. Opening a template is now almost immediate.
+
+### Other Changes
+
+- Improved multi-step Command Palette workflows by adding visible step counts and in-place progress
+  indication while performing background validation of user input, avoiding shifting focus from the
+  Command Palette to a progress notification.
+- Fixed Zowe Explorer for IBM CICS Transaction Server extensions registration to handle cases where
+  the CICS extension is installed or activated after the File Manager extension, or where the
+  File Manager extension is uninstalled or deactivated.
+
+### Requirements
+
+- Changed the minimum supported Zowe Explorer version to 3.2.0 to improve compatibility.
+- Raised the minimum supported VS Code version to 1.101.0.
+
+### Blocked Items
+
+- Native VS Code Undo/Redo integration for the Unformatted and Formatted editors.  
+  Blocked by an upstream VS Code issue: https://github.com/microsoft/vscode/issues/296528
+
+# 16.1.226011417 (release)
+
+- Extended Zowe Explorer for IBM CICS Transaction Server to support opening data sets
+  and members from CICS-contributed actions.
+- Extended Zowe Explorer's Attributes view (via **Show Attributes**) to include attributes
+  provided by File Manager.
+- Added an **IBM File Manager** > **Show Resource Attributes** context menu action to
+  display PDS member attributes, due to a current limitation in the Zowe Explorer extension API.
+- Improved the usability of template **locking** and **unlocking** by adding progress
+  notifications and additional Command Palette actions.
+- Added support for the IBM-285 and IBM-1146 character sets (UK/Ireland).
+- Added support for the IBM-280 and IBM-1144 character sets (Italy).
+- Improved and consolidated the extension's overall quality.
+
+# 16.1.225110416 (release)
+
+### Formatted Editor
+
+- Added support for the IBM-278, IBM-937, and IBM-1143 character sets.
+- Improved the usability of the (un)formatted editor header.  
+  The command input now maintains a minimum usable size, and the layout selector displays
+  the full layout name when expanded, even for long names.
+
 # 16.1.225101614 (release)
 
 ### Template Editor
