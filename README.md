@@ -19,8 +19,8 @@ as well as other extensions available for [ADFz][link-ext-pack] customers.**
 
 ## VS Code extension requirements
 
-- [VS Code][link-vscode] `1.90.0`+
-- [Zowe Explorer][link-zowe] `3.1.0`+
+- [VS Code][link-vscode] `1.101.0`+
+- [Zowe Explorer][link-zowe] `3.2.0`+
   - Assumes that the user has knowledge of the Zowe Explorer extension before using the IBM File Manager extension
 
 ## Host requirements
@@ -37,10 +37,12 @@ Note that while `15.1.x` host builds might work, they are **not** officially sup
 The extension currently supports decoding and encoding character data using the following character sets:
 
 ```text
-IBM037  IBM939   IBM1390
-IBM273  IBM1047  IBM1399
-IBM297  IBM1141
-IBM930  IBM1147
+IBM037  IBM930   IBM1144
+IBM273  IBM937   IBM1146
+IBM278  IBM939   IBM1147
+IBM280  IBM1047  IBM1390
+IBM285  IBM1141  IBM1399
+IBM297  IBM1143
 ```
 
 ## Features
@@ -56,7 +58,6 @@ Itemized below are the features supported and not supported in broad terms.
 The File Manager editor can be used in two modes:
 
 - Viewing and editing data sets using the **character mode** editor
-
   - Hex values display
   - Column ruler
   - Navigation commands
@@ -106,9 +107,9 @@ The current implementation offers the following feature set:
   in _edit_ mode in your VS Code File Manager editor session. However, the "locked" error will still be reported and the file won't open.
   Currently, the only resolution is to restart VS Code. This issue will be resolved in a future release.
 
-# Getting started
+## Getting started
 
-## Configuring the ADFz Common Component connection
+### Configuring the ADFz Common Component connection
 
 Before you begin, all the above requirements must be fulfilled.
 
@@ -124,7 +125,7 @@ You are now ready to use the IBM File Manager VS Code extension.
 NOTE: if you access a File Manager feature before configuring the ADFz Common Component connection,
 you will be prompted to specify the required information the first time only.
 
-## File Manager editor
+### File Manager editor
 
 Data sets under the Zowe Explorer tree view can be opened in the File Manager editor in both
 character and formatted mode (with a template applied). Both the character and the formatted
@@ -148,6 +149,26 @@ The IBM File Manager for z/OS extension supports the **Open Data Set** palette c
 a data set in the File Manager editor, and the **Open Template** palette command to open a template
 in the Template editor.
 
+## Getting Help
+
+To ask questions or report issues related to the installation, configuration,
+or use of this extension, please contact [IBM Support][support].
+
+### Zowe Explorer Issues
+
+Because this extension depends on Zowe Explorer, some issues may originate from
+core Zowe Explorer functionality. Examples include:
+
+- Data Set and USS file browsing
+- Job management and submission
+- Base Zowe Explorer commands and views
+
+Issues specific to Zowe Explorer should be reported to its [issue tracker][zowe-support].
+
+Determining the source of an issue and choosing the appropriate reporting channel is
+generally straightforward: error notifications include the extension name, and log
+entries displayed in the **Output** view are categorized by extension.
+
 [link-vscode]: https://code.visualstudio.com
 [link-zowe]: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
 [link-fm]: https://www.ibm.com/products/file-manager-for-zos
@@ -159,3 +180,5 @@ in the Template editor.
 [link-adfz-customize]: https://help.blueproddoc.com/adfz_common_components/1.10.0/en/svrauth.html
 [link-adfz-attls]: https://help.blueproddoc.com/adfz_common_components/1.10.0/en/attls.html
 [link-ext-pack]: https://marketplace.visualstudio.com/items?itemName=IBM.application-delivery-foundation-for-zos-vscode-extension-pack
+[support]: https://www.ibm.com/mysupport/
+[zowe-support]: https://github.com/zowe/zowe-explorer-vscode/issues
