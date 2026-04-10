@@ -1,3 +1,7 @@
+# 16.1.326040713 (release)
+
+- Added support for the IBM-277 and IBM-1142 character sets (Denmark/Norway).
+
 # 16.1.326030310 (release)
 
 ### Unformatted Editor
