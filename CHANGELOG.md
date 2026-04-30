@@ -1,3 +1,7 @@
+# 16.1.326042215 (release)
+
+- No changes.
+
 # 16.1.326040713 (release)
 
 - Added support for the IBM-277 and IBM-1142 character sets (Denmark/Norway).
