@@ -3,6 +3,7 @@
 <div align="center">
 
 [![GitHub Issues](https://img.shields.io/github/issues/IBM/fm-vs-code-extension?logo=GitHub)][link-fm-vsc-issues]
+[![VS Marketplace](https://vsmarketplacebadges.dev/version-short/IBM.zfilemanager.svg)][link-fm-extension]
 [![IBM ADFz Extension Pack](https://img.shields.io/badge/IBM-ADFz%20Extension%20Pack-blue)][link-ext-pack]
 [![IBM Support](https://img.shields.io/badge/IBM-Support-white)][link-support]
 
@@ -21,6 +22,7 @@ outside the existing ISPF or Eclipse-based clients.
 
 ## Table of contents
 
+- [Changelog](#changelog)
 - [General requirements](#general-requirements)
 - [Host requirements](#host-requirements)
 - [VS Code requirements](#vs-code-requirements)
@@ -29,6 +31,10 @@ outside the existing ISPF or Eclipse-based clients.
 - [Unsupported features](#unsupported-features)
 - [Getting started](#getting-started)
 - [Getting help](#getting-help)
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
 
 ## General requirements
 
@@ -236,6 +242,7 @@ To determine the source of an issue and the appropriate reporting channel, consi
 - Error notifications include the extension name.
 - Log entries displayed in the **Output** view are categorized by extension.
 
+[link-fm-extension]: https://marketplace.visualstudio.com/items?itemName=IBM.zfilemanager
 [link-vscode]: https://code.visualstudio.com
 [link-zowe]: https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe
 [link-fm-vsc-issues]: https://github.com/IBM/fm-vs-code-extension/issues
