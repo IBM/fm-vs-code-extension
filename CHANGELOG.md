@@ -1,3 +1,12 @@
+# 16.1.426060911 (release)
+
+- 🧪 Added an experimental **Sync Input Mode** setting to synchronize the input mode
+  (insert/overtype) with that of VS Code, allowing the same keyboard shortcut to toggle
+  the input mode across all supported editors and input fields.
+  Input mode synchronization is enabled by default but can be disabled if you encounter any issues.
+
+  For more information about overtype mode in VS Code, see [Basic Editing: Overtype Mode][overtype].
+
 # 16.1.326042215 (release)
 
 - No changes.
@@ -119,3 +128,5 @@
   failed to preserve their original order.
 - Reduced the size of the packaged standalone Monaco Editor by improving the bundling process.
 - Improved protocol APIs to deliver better performance and reliability.
+
+[overtype]: https://code.visualstudio.com/docs/editing/codebasics#_overtype-mode
