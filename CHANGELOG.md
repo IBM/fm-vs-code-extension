@@ -1,4 +1,16 @@
-# 16.1.426060911 (release)
+# 16.1.426071615 - July 2026 (release)
+
+- ✨ Redesigned the Command Palette flow for opening **data sets** and **members**.  
+  The wizard now suggests recently used data sets, supports browsing existing data sets with
+  wildcards (`*` and `**`), and automatically populates the member list with both recently
+  used members and members from the previously selected data set. This makes it easier to open
+  data sets and members directly from the Command Palette, reducing the need to navigate through the tree.
+- ✨ Redesigned the Command Palette flow for opening **templates**.  
+  Opening templates now follows the same streamlined experience as data sets and members.
+- 🐛 Fixed keyboard navigation in the Formatted Editor.  
+  Pressing `Tab` or `Shift+Tab` now correctly moves between table cells.
+
+# 16.1.426060911 - June 2026 (release)
 
 - 🧪 Added an experimental **Sync Input Mode** setting to synchronize the input mode
   (insert/overtype) with that of VS Code, allowing the same keyboard shortcut to toggle
@@ -7,15 +19,15 @@
 
   For more information about overtype mode in VS Code, see [Basic Editing: Overtype Mode][overtype].
 
-# 16.1.326042215 (release)
+# 16.1.326042215 - April 2026 (release)
 
 - No changes.
 
-# 16.1.326040713 (release)
+# 16.1.326040713 - April 2026 (release)
 
 - Added support for the IBM-277 and IBM-1142 character sets (Denmark/Norway).
 
-# 16.1.326030310 (release)
+# 16.1.326030310 - March 2026 (release)
 
 ### Unformatted Editor
 
@@ -45,7 +57,7 @@
 - Native VS Code Undo/Redo integration for the Unformatted and Formatted editors.  
   Blocked by an upstream VS Code issue: https://github.com/microsoft/vscode/issues/296528
 
-# 16.1.226011417 (release)
+# 16.1.226011417 - January 2026 (release)
 
 - Extended Zowe Explorer for IBM CICS Transaction Server to support opening data sets
   and members from CICS-contributed actions.
