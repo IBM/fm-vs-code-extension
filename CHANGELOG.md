@@ -1,3 +1,13 @@
+# 16.1.426081911 - August 2026 (release)
+
+- 🎉 Added a new **Export Data Set** command to export data set records to a local file in CSV or XML format.
+  The command is available in the Command Palette and as a context menu item in the Zowe Explorer Data Sets tree.  
+  **Note**: advanced customization of how records are exported is not yet supported.
+- ✨ Improved multi-step Command Palette workflows for opening **data sets** and **templates**,
+  and for showing **resource attributes**, with a new **Back** button in the title area that lets you
+  return to previous steps without restarting the workflow, making it easier to change selections.
+- 🛠️ Raised the minimum supported VS Code version to 1.108.0.
+
 # 16.1.426071615 - July 2026 (release)
 
 - ✨ Redesigned the Command Palette flow for opening **data sets** and **members**.  
