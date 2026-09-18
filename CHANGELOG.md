@@ -1,3 +1,14 @@
+# 16.1.426091513 - September 2026 (release)
+
+- 🎉 Added an **Import Data Set** command to import CSV files into z/OS data sets.
+  The command is available in the Command Palette and as a context menu item in the Zowe Explorer Data Sets tree.
+
+  Note: **Import Data Set** may not work correctly with IBM File Manager host versions older than v16.1.5 or v17.1.0.
+  IBM File Manager for z/OS v16.1.5 and v17.1.0 are scheduled for release in November and October 2026, respectively.
+
+- ✨ Redesigned the **Export Data Set** wizard to present all available options upfront rather than requiring
+  navigation through multiple steps, making it easier to use and extend.
+
 # 16.1.426081911 - August 2026 (release)
 
 - 🎉 Added a new **Export Data Set** command to export data set records to a local file in CSV or XML format.
