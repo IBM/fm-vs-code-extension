@@ -19,6 +19,7 @@ and offers menu options to configure ADFz Common Component connections, streamli
 
 - [Requirements](#requirements)
 - [Integration with Zowe Explorer](#integration-with-zowe-explorer)
+- [Configuring the extension](#configuring-the-extension)
 - [ADFz Common Component connections](#adfz-common-component-connections)
   - [Configure a connection](#configure-a-connection)
   - [Configure a connection in `zowe.config.json`](#configure-a-connection-in-zoweconfigjson)
@@ -53,6 +54,17 @@ customized UI elements whenever possible. Instead, it enhances your current work
 - Adding new functionality directly to Zowe Explorer's existing views.
 
 See the [Getting help](#zowe-explorer-issues) section to report issues related to the Zowe Explorer extension.
+
+## Configuring the extension
+
+Configure the following setting under **IBM ADFz Common Component** in VS Code Settings.
+
+### Credentials: Prompt On Profile Update
+
+Use the **Prompt On Profile Update** setting to control whether the extension prompts you to update
+ADFz Common Component credentials when the associated Zowe profile credentials change.
+
+This is enabled by default.
 
 ## ADFz Common Component connections
 
