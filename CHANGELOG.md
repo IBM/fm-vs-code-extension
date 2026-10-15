@@ -1,3 +1,8 @@
+# 17.1.26101408 - October 2026 (release)
+
+- ✨ Improved the **Import Data Set** wizard with tooltips explaining each option.
+- ✨ Improved the **Export Data Set** wizard to allow users to include or exclude column names in CSV output.
+
 # 16.1.426091513 - September 2026 (release)
 
 - 🎉 Added an **Import Data Set** command to import CSV files into z/OS data sets.
